@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title> Convert a Number to Hexadecimal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="ReactTitle ">
+              <h3> Convert a Number to Hexadecimal </h3>
+            </div>
+    </header>
+    <div>
+        <main role="main" class="container" style="margin-bottom: 100px;"> 
+            <div class="contains">
+                <h5> Convert a Number to Hexadecimal</h5>
+                <p>Given an integer num, return a string representing its hexadecimal representation. For negative integers, 
+                    two’s complement method is used
+                    This code uses a bitwise AND operation with 15 (binary 1111) to get the last 4 bits of the number, 
+                    and then shifts the number to the right by 4 bits in each iteration until the number becomes 0. The result is a hexadecimal representation of the given integer</p>
+                    
+        <label for="decimalInput">Enter a Decimal Number:</label>
+        <input type="number" id="decimalInput">
+        <button type="button" class="btn btn-info" onclick="convertToHex()">Convert to Hexadecimal</button>
+    </div>
+    
+    <div>
+      
+        <p id="hexOutput"></p>
+    </div>
+</div>
+</main>
+</div>
+<footer class="footer footer-dark">
+    <div class="d-flex justify-content-center px-5">
+      <div>
+        <button
+          onclick="setTheme('#1A4B84')"
+          class="theme-switch theme-switch-chathams_blue"
+        ></button>
+        <button
+          onclick="setTheme('#991E14')"
+          class="theme-switch theme-switch-tamarillo"
+        ></button>
+        <button
+          onclick="setTheme('#FEAD06')"
+          class="theme-switch theme-switch-yellow_sea"
+        ></button>
+      </div>
+    </div>
+  </footer>
+<script src="assets/js/convert.js"></script>
+</body>
+</html>
